@@ -1,0 +1,20 @@
+# Neil Collins - Fantasy Football Project
+
+# First, I am going to import draft pick data from my snake draft leagues using
+# GET https://api.sleeper.app/v1/draft/<DraftID>/picks in PostMan
+
+import json
+import os
+
+print(os.getcwd())
+
+raw = '{"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}'
+the_final_5_parsed = (json.loads(raw))
+print(json.dumps(the_final_5_parsed, indent=4, sort_keys=True))
+
+with open('C:/Users/Neil/Desktop/FFJson/The_Final_5.json') as json_file:
+       The_Final_5 = json.load(json_file)
+
+print(The_Final_5)
+
+print(dir())
